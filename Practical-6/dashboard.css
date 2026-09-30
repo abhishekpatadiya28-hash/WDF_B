@@ -1,0 +1,216 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #1e293b;
+}
+
+
+header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav .active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.dashboard-home {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.dashboard-home h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.dashboard-home p {
+    color: #64748b;
+}
+
+
+
+.overview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 8% 45px;
+   
+}
+
+.overview-card {
+    background-color: white;
+    width: 210px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.overview-card h2 {
+    font-size: 30px;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+.overview-card p {
+    color: #64748b;
+}
+
+body > h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+
+.schedule {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+
+.goals {
+    width: 80%;
+    margin: 45px auto;
+}
+
+.goals h2 {
+    margin-bottom: 15px;
+}
+
+.goal-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.goal-box p {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.goal-box p:last-child {
+    border-bottom: none;
+}
+
+
+
+.notice {
+    width: 80%;
+    margin: 45px auto;
+}
+
+.notice h2 {
+    margin-bottom: 15px;
+}
+
+.notice-box {
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.notice-box h3 {
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.notice-box p {
+    color: #475569;
+    margin: 5px 0;
+}
+
+
+
+
+.dashboard-quote {
+    width: 80%;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 15px;
+}
+
+.dashboard-quote h2 {
+    font-size: 21px;
+    font-style: italic;
+}
+
+
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+
