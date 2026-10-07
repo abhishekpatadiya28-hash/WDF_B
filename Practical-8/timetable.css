@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #1e293b;
+}
+
+
+
+
+header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+
+body > h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+body > section:first-of-type {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+
+
+
+body > h2 {
+    width: 85%;
+    margin: 30px auto 18px;
+    font-size: 23px;
+}
+
+
+
+
+body > section {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+td {
+    padding: 13px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+
+td:first-child {
+    font-weight: bold;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+
+
+td[colspan="5"] {
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+
+
+body > h2:nth-of-type(2) + section {
+    padding: 20px 25px;
+}
+
+body > h2:nth-of-type(2) + section p {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+body > h2:nth-of-type(2) + section p:last-child {
+    border-bottom: none;
+}
+
+
+
+
+body > h2:nth-of-type(3) + section {
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+}
+
+body > h2:nth-of-type(3) + section p {
+    padding: 10px;
+    color: #475569;
+}
+
+
+
+.quote {
+    width: 85%;
+    margin: 45px auto;
+    padding: 35px;
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 15px;
+}
+
+.quote h2 {
+    font-size: 21px;
+    font-style: italic;
+}
+
+
+
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+
