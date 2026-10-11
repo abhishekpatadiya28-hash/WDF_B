@@ -1,0 +1,173 @@
+
+<?php
+require "auth.php";
+
+if ($_SESSION["role"] === "admin") {
+    header("Location: admin_dashboard.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+
+    <title>StudentHub | Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🎓 Student<span>Hub</span>
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="dashboard.php" class="active">Dashboard</a>
+            <a href="students.php">Students</a>
+            <a href="events.php">Events</a>
+            <a href="register_event.php">Register Event</a>
+            <a href="registrations.php">Registrations</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="notes.html">Notes</a>
+            <a href="Assignments.html">Assignments</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+        </nav>
+       
+<form action="logout.php" method="POST">
+    <button type="submit">Logout</button>
+</form>
+
+    </header>
+    <section class="dashboard-home">
+       <h1>Welcome Back, <?php
+echo htmlspecialchars($_SESSION["name"], ENT_QUOTES, "UTF-8");
+?> 👋</h1>
+        <p>
+            Stay organized and achieve your academic goals with StudentHub.
+        </p>
+    </section>
+
+    <section class="overview">
+
+        <div class="overview-card">
+            <h2>92%</h2>
+            <p>Attendance</p>
+        </div>
+
+        <div class="overview-card">
+            <h2>4</h2>
+            <p>Assignments</p>
+        </div>
+
+        <div class="overview-card">
+            <h2>25</h2>
+            <p>Study Notes</p>
+        </div>
+
+        <div class="overview-card">
+            <h2>9.0</h2>
+            <p>CGPA Goal</p>
+        </div>
+
+    </section>
+
+    <h2>📅 Today's Schedule</h2>
+    <section class="schedule">
+        <table>
+
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+
+            <tr>
+                <td>9:00 AM</td>
+                <td>HTML Lab</td>
+            </tr>
+
+            <tr>
+                <td>11:00 AM</td>
+                <td>DSA</td>
+            </tr>
+
+            <tr>
+                <td>2:00 PM</td>
+                <td>Network security</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM</td>
+                <td>Library</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section class="goals">
+
+        <h2>🎯 Today's Goals</h2>
+
+        <div class="goal-box">
+
+            <p>✅ Complete HTML Project</p>
+
+            <p>✅ Practice CSS</p>
+
+            <p>✅ Submit DBMS Assignment</p>
+
+            <p>✅ Revise AIML Notes</p>
+
+        </div>
+
+    </section>
+
+    <section class="notice">
+
+        <h2>📢 Latest Notice</h2>
+
+        <div class="notice-box">
+
+            <h3>Internal Viva Examination</h3>
+
+            <p>Date : 22 July 2026</p>
+
+            <p>Venue : Computer Lab - 5</p>
+
+            <p>Time : 10:00 AM</p>
+
+        </div>
+
+    </section>
+
+    <section class="dashboard-quote">
+
+        <h2>
+
+            "Discipline is the bridge between goals and success."
+
+        </h2>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            © 2026 StudentHub | Dashboard
+
+        </p>
+
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
