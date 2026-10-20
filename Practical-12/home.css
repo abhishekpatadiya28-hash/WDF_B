@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #1e293b;
+}
+
+header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: #f5f7fb;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.welcome {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.description {
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.start-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.start-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.register-btn {
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.register-btn:hover {
+    background-color: #dbeafe;
+}
+
+
+
+.hero-image {
+    width: 35%;
+    text-align: center;
+}
+
+.image-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.image-box img {
+    width: 150px;
+    height: 150px;
+}
+
+.image-box h3 {
+    margin-top: 10px;
+}
+
+.image-box p {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+
+
+.bottom {
+    text-align: center;
+    padding: 55px 20px;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+}
+
+.bottom h2 {
+    margin-bottom: 10px;
+}
+
+.bottom p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.bottom button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.bottom button:hover {
+    background-color: #1d4ed8;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+
+
+
+
