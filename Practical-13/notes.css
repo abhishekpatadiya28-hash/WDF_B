@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #1e293b;
+}
+
+
+
+
+header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+
+
+.notes-home {
+    text-align: center;
+    padding: 45px 20px 35px;
+}
+
+.notes-home h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.notes-home p {
+    color: #64748b;
+    font-style: italic;
+}
+
+
+
+body > h2 {
+    width: 80%;
+    margin: 30px auto 18px;
+    font-size: 24px;
+}
+
+
+
+
+.class-notes {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.class-notes h3 {
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+.class-notes p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+
+
+
+.imp-notes {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.imp-notes p {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.imp-notes p:last-child {
+    border-bottom: none;
+}
+
+.imp-notes a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.imp-notes a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+
+
+.study-progress {
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.study-progress h3 {
+    margin-bottom: 8px;
+    color: #475569;
+}
+
+.progress {
+    width: 100%;
+}
+
+progress {
+    width: 100%;
+    height: 18px;
+    accent-color: #2563eb;
+    margin-bottom: 18px;
+}
+
+
+
+
+.notes-quote {
+    width: 80%;
+    margin: 45px auto;
+    padding: 35px;
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 15px;
+}
+
+.notes-quote h2 {
+    font-size: 21px;
+    font-style: italic;
+}
+
+.notes-quote p {
+    margin: 0;
+}
+
+
+
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+
