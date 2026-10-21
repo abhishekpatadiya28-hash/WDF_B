@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | JSON API</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px;
+            background: #f5f7fb;
+            color: #1e293b;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .panel {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+        }
+
+        button {
+            border: none;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .actions button {
+            width: auto;
+        }
+
+        .cancel {
+            background: #64748b;
+        }
+
+        .delete {
+            background: #dc2626;
+        }
+
+        .edit {
+            background: #0f766e;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 850px;
+        }
+
+        th, td {
+            padding: 11px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+        }
+
+        td button {
+            width: auto;
+            margin: 2px;
+        }
+
+        #message {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>StudentHub Student Management</h1>
+    <p>Manage student records using PHP JSON API and Fetch API.</p>
+
+    <p id="message" role="status" aria-live="polite"></p>
+
+    <section class="panel">
+        <h2 id="form-title">Add Student</h2>
+
+        <form id="student-form">
+            <div class="form-grid">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" maxlength="100" required>
+                </div>
+
+                <div>
+                    <label for="username">Username</label>
+                    <input id="username" name="username" maxlength="50" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" maxlength="100" required>
+                </div>
+
+                <div>
+                    <label for="mobile">Mobile</label>
+                    <input id="mobile" name="mobile" type="tel" maxlength="15" required>
+                </div>
+
+                <div>
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select course</option>
+                        <option>BCA</option>
+                        <option>B.Tech</option>
+                        <option>BBA</option>
+                        <option>MCA</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="year">Academic Year</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select year</option>
+                        <option value="1">Year 1</option>
+                        <option value="2">Year 2</option>
+                        <option value="3">Year 3</option>
+                        <option value="4">Year 4</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div id="password-field">
+                    <label for="password">Initial Password</label>
+                    <input id="password" name="password"
+                           type="password" minlength="8" required>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" id="save-button">Add Student</button>
+                <button type="button" id="cancel-button" class="cancel" hidden>
+                    Cancel Edit
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>Student Records</h2>
+        <button type="button" id="refresh-button">Refresh List</button>
+
+        <div class="table-wrap" style="margin-top: 15px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <tr>
+                        <td colspan="7">Loading students...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="students_api.js"></script>
+</body>
+</html>
+
